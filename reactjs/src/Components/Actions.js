@@ -5,7 +5,7 @@ export default function () {
   if (store.articales.length < 1) {
   $.ajax({
 
-    url: "http://127.0.0.1:8000/articales/",
+    url: "http://fawaz.online/articales/",
     dataType: "json",
     headers: {
               'Authorization': 'Token ' + localStorage.token

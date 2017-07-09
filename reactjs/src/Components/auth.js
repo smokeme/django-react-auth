@@ -28,7 +28,7 @@ const auth = observer(new class auth {
       if (store.username === ""){
         $.ajax({
 
-          url: "http://127.0.0.1:8000/users/i",
+          url: "http://fawaz.online/users/i",
           dataType: "json",
           headers: {
                     'Authorization': 'Token ' + localStorage.token
@@ -53,7 +53,7 @@ const auth = observer(new class auth {
     var request = $.ajax({
         type: 'POST',
         datatype: 'application/json',
-        url: 'http://127.0.0.1:8000/obtain-auth-token/',
+        url: 'http://fawaz.online/obtain-auth-token/',
         data: {
           username: username,
           password: pass
@@ -64,7 +64,7 @@ const auth = observer(new class auth {
           localStorage.token = res.token
           $.ajax({
 
-            url: "http://127.0.0.1:8000/users/i",
+            url: "http://fawaz.online/users/i",
             dataType: "json",
             headers: {
                       'Authorization': 'Token ' + localStorage.token

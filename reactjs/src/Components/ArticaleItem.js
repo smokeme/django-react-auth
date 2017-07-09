@@ -22,7 +22,7 @@ const ArticaleItem = observer(class ArticaleItem extends Component {
     var request = $.ajax({
         type: 'PUT',
         datatype: 'application/json',
-        url: 'http://127.0.0.1:8000/articales/' + this.props.articale.id + '/',
+        url: 'http://fawaz.online:8000/articales/' + this.props.articale.id + '/',
         headers: {
                   'Authorization': 'Token ' + localStorage.token
         },
@@ -39,7 +39,7 @@ const ArticaleItem = observer(class ArticaleItem extends Component {
     var request = $.ajax({
         type: 'DELETE',
         datatype: 'application/json',
-        url: 'http://127.0.0.1:8000/articales/' + this.props.articale.id + '/',
+        url: 'http://fawaz.online/articales/' + this.props.articale.id + '/',
         headers: {
                   'Authorization': 'Token ' + localStorage.token
         },

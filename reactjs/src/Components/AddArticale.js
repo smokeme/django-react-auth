@@ -19,7 +19,7 @@ const AddArticale = observer(class AddArticale extends Component {
     var request = $.ajax({
         type: 'POST',
         datatype: 'application/json',
-        url: 'http://127.0.0.1:8000/articales/',
+        url: 'http://fawaz.online/articales/',
         headers: {
                   'Authorization': 'Token ' + localStorage.token
         },
